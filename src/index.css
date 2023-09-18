@@ -1,13 +1,91 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img {
+  width: 3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Nav-header {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: white;
+  padding: 0 3rem;
+}
+
+.Nav-title {
+  margin-right: auto;
+  margin-left: 0.5rem;
+}
+
+.form-container {
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inputform {
+  display: flex;
+  width: 40rem;
+}
+
+.inputform input {
+  width: 100%;
+  margin: 0 1rem;
+  height: 2rem;
+  text-indent: 1rem;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  background-color: #a626d3;
+  display: flex;
+  justify-content: center;
+  padding: 0.7rem;
+  margin-top: 2rem;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+.HeroImage {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+}
+
+.meme {
+  position: relative;
+}
+.meme--text {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+  word-wrap: break-word;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
 }
